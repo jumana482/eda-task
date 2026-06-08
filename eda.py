@@ -2,16 +2,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv("student.csv")
+df = pd.read_csv("Students.csv")
 print(df.head())
 
 # Dataset information
 print(df.info())
 
-# Statistical summary
 print(df.describe())
 
-# Check missing values
 print(df.isnull().sum())
 
 # Correlation Heatmap
