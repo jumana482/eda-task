@@ -22,10 +22,12 @@ plt.show()
 # Histogram
 df.hist(figsize=(10,8))
 plt.suptitle("Distribution of Features")
+plt.savefig("histogram.png")
 plt.show()
 
 # Boxplot for Outlier Detection
 plt.figure(figsize=(10,6))
 sns.boxplot(data=df.select_dtypes(include='number'))
 plt.title("Outlier Detection")
+plt.savefig("boxplot.png")
 plt.show()
